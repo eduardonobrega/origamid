@@ -41,14 +41,13 @@ body {
 }
 
 button,
-li {
+header li {
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
 }
 
-p,
-dl > dd {
+p {
   font-size: clamp(1.6rem, 1.2rem + 1.25vw, 2rem);
 }
 
@@ -112,9 +111,21 @@ article > .text button {
   border: none;
   background-color: var(--vermelho);
   color: #fff;
+
+  cursor: pointer;
 }
 
-section h2 {
+article > .text button:hover {
+  background-color: #900;
+  
+}
+
+section #wrapper-h2 h2 {
+  background: url('assets/onda.svg'); 
+
+}
+
+section #wrapper-h2  h2 {
   text-align: center;
   color: var(--cinza-texto);
   font-size: clamp(4rem, 1.6rem + 7.5vw, 6.4rem);
@@ -123,27 +134,63 @@ section h2 {
   margin: 4rem 0;
 }
 
-section dl {
+section ul{
   background-color: #fff;
-  padding: 4rem;
-}
+  list-style: none;
 
-section dl dt {
-  text-align: start;
-  font-weight: 700;
+
+  padding: 4rem;
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section ul li {
+  padding: 2rem;
+  border-left: 4px solid transparent;
+}
+
+section ul li:hover {
+  border-left-color: var(--vermelho);
+  border-left: 4px solid var(--vermelho);
+
+}
+
+section ul li:nth-child(odd) {
+  background-color: var(--cinza-fundo);
+}
+
+
+section ul li img {
+  display: inline;
+} 
+
+section ul li h3 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
   gap: 2rem;
 }
+
+section ul li p {
+  margin-inline-start: 4.4rem;
+  max-width: 32.1rem;
+  text-align: start;
+}
+
 
 section dl dt:not(dt:first-child) {
   margin-top: 4rem;
 }
 
 section dl dd {
-  max-width: 32.1rem;
-  text-align: start;
-  margin-inline-start: 4.4rem;
+  
 }
 
 footer {
@@ -152,6 +199,7 @@ footer {
   padding: 4rem 0;
   margin-top: 4rem;
 }
+
 
 @media (min-width: 40em) {
   header {
@@ -171,10 +219,11 @@ footer {
   header ul li {
     cursor: pointer;
     transition: filter 300ms;
+    border: 2px solid #fff;
   }
 
   header li:hover {
-    filter: brightness(0.9);
+    border-color: var(--vermelho);
   }
 
   header li a:hover {
@@ -222,7 +271,7 @@ footer {
     justify-content: center;
   }
 
-  section dl {
+  section ul {
     width: 50%;
   }
 
@@ -232,9 +281,10 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
+  
   section #wrapper-h2 h2 {
-    text-align: end;
+    text-align: right;
+    padding: 4rem;
     font-size: clamp(4rem, -0.2667rem + 6.6667vw, 6.4rem);
   }
 }
