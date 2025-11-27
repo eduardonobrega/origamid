@@ -5,16 +5,12 @@
 }
 
 .introducao {
-    width: min(90%, 1200px);
-    margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 4rem;
 }
 
 .introducao img {
-    border-radius: 5px;
     height: 100%;
     object-fit: cover;
 }

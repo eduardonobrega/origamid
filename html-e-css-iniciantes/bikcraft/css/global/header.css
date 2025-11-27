@@ -3,8 +3,6 @@
 }
 
 .header {
-    width: min(90%, 1200px);
-    margin: 0 auto;
     padding: 3.2rem 0;
 
     display: flex;
