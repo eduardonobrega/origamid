@@ -1,0 +1,17 @@
+:root {
+    --font-1: "Poppins", "Arial", sans-serif;
+    --font-1-xxl: 600 clamp(3.2rem, 0.9143rem + 4.5714vw, 6.4rem) / 1.125 var(--font-1);
+    --font-1-xl: 600 3.2rem/1.25 var(--font-1);
+    --font-1-l: 400 2.4rem/1.5 var(--font-1);
+    --font-1-m: 400 1.8rem/1.33 var(--font-1);
+    --font-1-m-b: 600 1.8rem/1.33 var(--font-1);
+    --font-1-s: 400 1.6rem/1.5 var(--font-1);
+    --font-1-xs: 600 1.2rem/1.33 var(--font-1);
+
+    --font-2: "Roboto", "Arial", sans-serif;
+    --font-2-l-b: 500 2.4rem/1.5 var(--font-2);
+    --font-2-l: 400 clamp(1.8rem, 1.5818rem + 0.6818vw, 2.4rem) / 1.5 var(--font-2);
+    --font-2-m: 500 1.8rem/1.33 var(--font-2);
+    --font-2-s: 400 1.6rem/1.5 var(--font-2);
+    --font-2-xs: 400 1.4rem/1.42 var(--font-2);
+}
