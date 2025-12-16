@@ -1,0 +1,23 @@
+.botao {
+    color: var(--cor-p5);
+    background: linear-gradient(#ffbf00, #f2a50c);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    font: var(--font-1-m-b);
+    text-transform: uppercase;
+    letter-spacing: 5%;
+
+    padding: 1.6rem 3.2rem;
+}
+
+.botao:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 600px) {
+    .botao {
+        font-size: 1.6rem;
+        padding: 1.2rem 1.6rem;
+    }
+}

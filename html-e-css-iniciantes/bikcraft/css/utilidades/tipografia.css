@@ -1,7 +1,7 @@
 :root {
     --font-1: "Poppins", "Arial", sans-serif;
     --font-1-xxl: 600 clamp(3.2rem, 0.9143rem + 4.5714vw, 6.4rem) / 1.125 var(--font-1);
-    --font-1-xl: 600 3.2rem/1.25 var(--font-1);
+    --font-1-xl: 600 clamp(2.4rem, 2.1091rem + 0.9091vw, 3.2rem) / 1.25 var(--font-1);
     --font-1-l: 400 2.4rem/1.5 var(--font-1);
     --font-1-m: 400 1.8rem/1.33 var(--font-1);
     --font-1-m-b: 600 1.8rem/1.33 var(--font-1);
