@@ -1,0 +1,116 @@
+.tecnologia-bg {
+    background-color: var(--cor-11);
+    color: var(--cor-0);
+    box-shadow: inset 0px 80px #fff, inset 0px -80px #fff;
+}
+
+.tecnologia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.tecnologia > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.tecnologia-texto {
+    padding: 16rem 0;
+}
+
+.tecnologia-texto > h2 {
+    margin-bottom: 3.2rem;
+}
+
+.tecnologia-texto p {
+    color: var(--cor-5);
+}
+
+.tecnologia-texto > p {
+    font: var(--font-2-l);
+    margin-bottom: 2rem;
+}
+
+.link {
+    font: var(--font-1-l);
+    font-size: clamp(1.8rem, 1.5818rem + 0.6818vw, 2.4rem);
+    font-weight: 600;
+    color: var(--cor-p1);
+    text-transform: uppercase;
+
+    display: block;
+    width: fit-content;
+    margin-bottom: 8rem;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--cor-0);
+}
+.link:hover::after,
+.link:focus::after {
+    background-color: var(--cor-0);
+}
+
+.link::after {
+    content: "";
+    display: block;
+    background-color: var(--cor-p1);
+    width: 100%;
+    height: 4px;
+}
+
+.tecnologia-vantagens {
+    display: flex;
+    gap: 4rem;
+}
+
+.tecnologia-vantagens img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.tecnologia-vantagens h3 {
+    font: var(--font-1-l);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.tecnologia-vantagens p {
+    font: var(--font-2-s);
+}
+
+@media (max-width: 1000px) {
+    .tecnologia {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .tecnologia-bg {
+        box-shadow: none;
+    }
+    .tecnologia {
+        grid-template-columns: 1fr;
+    }
+    .tecnologia > img {
+        display: none;
+    }
+    .tecnologia-texto {
+        padding: 6rem 0;
+    }
+
+    .tecnologia-texto > a {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .tecnologia-vantagens {
+        flex-direction: column;
+    }
+}

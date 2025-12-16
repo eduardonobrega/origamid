@@ -31,6 +31,7 @@ textarea {
 
 body {
     min-height: 100vh;
+    color: var(--cor-11);
 }
 
 a {
@@ -50,6 +51,13 @@ h2 {
 
 img[src$=".jpg"] {
     border-radius: 5px;
+}
+
+.subtitulo {
+    font: var(--font-2-l-b);
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    color: var(--cor-5 );
 }
 
 .dot-detail {
