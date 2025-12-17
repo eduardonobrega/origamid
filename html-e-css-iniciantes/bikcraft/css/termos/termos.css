@@ -1,0 +1,29 @@
+.termos {
+    padding: 12rem 0;
+}
+
+.termos h2 {
+    font: var(--font-1-l);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.termos p {
+    font: var(--font-2-m);
+    font-weight: 400;
+    max-width: 75ch;
+}
+
+.termos p + p {
+    margin-top: 2rem;
+}
+
+.termos h2:not(:first-child) {
+    margin-top: 4.8rem;
+}
+
+@media (max-width: 800px) {
+    .termos {
+        padding: 6rem 0;
+    }
+}

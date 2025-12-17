@@ -1,3 +1,27 @@
+.title-page {
+    background-color: var(--cor-11);
+    color: var(--cor-0);
+    padding: 6rem 0;
+}
+
+.title-page .subtitulo {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 800px) {
+    .title-page {
+        padding: 4rem 0;
+    }
+
+    .title-page .subtitulo {
+        font-size: 1.8rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}
+
+/* Botão */
 .botao {
     color: var(--cor-p5);
     background: linear-gradient(#ffbf00, #f2a50c);
