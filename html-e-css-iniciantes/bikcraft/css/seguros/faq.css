@@ -1,0 +1,75 @@
+.faq {
+    padding: 12rem 0;
+}
+
+.faq h2 {
+    margin-bottom: 6rem;
+}
+
+.faq-item {
+    padding: 2rem 4rem;
+    border-radius: 5px;
+}
+
+.faq-item:nth-of-type(odd) {
+    background-color: var(--cor-1);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.faq-item summary {
+    font: var(--font-1-m-b);
+    margin-bottom: 1.6rem;
+
+    list-style: none;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.faq-item summary::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.8rem;
+    background-color: var(--cor-p1);
+}
+
+.faq-item summary::after {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 0.8rem;
+    background: url(../../img/icones/seta-abrir.svg) no-repeat;
+    background-size: contain;
+    justify-self: end;
+}
+
+.faq-item p {
+    font: var(--font-2-s);
+    color: var(--cor-9);
+    padding-left: 2rem;
+    width: 1;
+}
+
+@media (max-width: 800px) {
+    .faq-item {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-item summary {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .faq-item summary::before {
+        display: none;
+    }
+}
