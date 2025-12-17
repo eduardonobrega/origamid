@@ -9,10 +9,22 @@
     letter-spacing: 5%;
 
     padding: 1.6rem 3.2rem;
+    width: fit-content;
+    transition: background 0.3s;
 }
 
 .botao:hover {
     background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+    background: var(--cor-10);
+    color: var(--cor-4);
+}
+
+.botao.secundario:hover,
+.botao.secundario:focus {
+    background: var(--cor-9);
 }
 
 @media (max-width: 600px) {
