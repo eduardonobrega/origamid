@@ -1,7 +1,10 @@
+#bicicleta .bicicletas-lista ul {
+    margin: 0;
+}
+
 .bicicletas-lista {
     padding: 6rem 0;
 }
-
 .bicicletas-lista h2 {
     margin-bottom: 4rem;
 }

@@ -15,6 +15,8 @@
 /* Bicicletas */
 @import url(bicicletas/bicicletas.css);
 @import url(bicicletas/bicicletas-lista.css);
+@import url(bicicleta/nimbus.css);
+@import url(bicicleta/seguro.css);
 
 /* Termos */
 @import url(termos/termos.css);
