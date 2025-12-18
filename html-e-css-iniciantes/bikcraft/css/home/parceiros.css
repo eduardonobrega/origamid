@@ -6,6 +6,10 @@
     margin-bottom: 6rem;
 }
 
+.parceiros img {
+    height: auto;
+}
+
 .parceiros ul {
     width: min(95%, 1400px);
     margin: 0 auto;

@@ -25,6 +25,8 @@
 
 .bicicletas-lista img {
     margin-bottom: 1.6rem;
+    width: 100%;
+    height: auto;
 }
 
 .bicicletas-lista h3 {
