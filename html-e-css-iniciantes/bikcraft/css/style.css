@@ -25,3 +25,7 @@
 @import url(seguros/seguros.css);
 @import url(seguros/vantagens.css);
 @import url(seguros/faq.css);
+
+/* Contato */
+@import url(contato/contato.css);
+@import url(contato/lojas.css);

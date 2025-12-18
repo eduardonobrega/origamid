@@ -1,0 +1,126 @@
+#contato {
+    background-color: var(--cor-1);
+}
+
+.contato-bg {
+    box-shadow: inset 0px 30rem var(--cor-11);
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados {
+    background-color: var(--cor-12);
+
+    padding: 6rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.contato h2 {
+    color: var(--cor-0);
+    font: var(--font-1-s);
+    font-weight: 600;
+    margin-bottom: 6rem;
+}
+
+.contato ul {
+    font: var(--font-2-s);
+    color: var(--cor-4);
+    padding-left: 2.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.contato ul a:hover {
+    color: var(--cor-0);
+}
+
+.contato ul:nth-of-type(1) {
+    background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+}
+.contato address ul:nth-of-type(1) {
+    background: url(../../img/icones/email.svg) no-repeat 0px 2px;
+}
+.contato address ul:nth-of-type(2) {
+    background: url(../../img/icones/telefone.svg) no-repeat 0px 2px;
+    margin-bottom: 6rem;
+}
+
+.contato ul:not(:last-of-type) li + li {
+    margin-top: 8px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.contato form {
+    background-color: var(--cor-0);
+    border-radius: 0 5px 5px 0;
+    padding: 6rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+
+.all-col {
+    grid-column: 1 / -1;
+}
+
+.contato form > div {
+    display: grid;
+    gap: 4px;
+}
+
+.contato form label {
+    font: var(--font-1-s);
+    font-weight: 500;
+}
+
+.contato form input,
+.contato form textarea {
+    background-color: var(--cor-1);
+    border-radius: 5px;
+    border: 1px solid var(--cor-2);
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.contato form input::placeholder .contato form textarea::placeholder {
+    color: var(--cor-7);
+}
+
+.contato form textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+@media (max-width: 800px) {
+    .contato {
+        grid-template-columns: 1fr;
+    }
+    .contato-dados {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .contato form {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contato-dados,
+    .contato form {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contato form {
+        grid-template-columns: 1fr;
+    }
+}
