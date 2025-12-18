@@ -1,0 +1,175 @@
+#orcamento {
+    background-color: var(--cor-1);
+}
+
+.orcamento-bg {
+    box-shadow: inset 0px 30rem var(--cor-11);
+}
+
+.orcamento {
+    border-radius: 5px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 12rem;
+}
+
+.form-bikcraft {
+    background-color: var(--cor-12);
+}
+
+.form-bikcraft fieldset legend {
+    color: var(--cor-5);
+}
+
+.radio-item {
+    background-color: var(--cor-10);
+    border: 1px solid var(--cor-10);
+
+    color: var(--cor-4);
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.8rem;
+    padding: 1.6rem 1.8rem;
+    position: relative;
+}
+
+.radio-item input {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.radio-item::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid var(--cor-6);
+    padding: 4px;
+}
+
+.radio-item:has(input:checked)::before {
+    box-shadow: inset 0 0px 0px 3px var(--cor-0);
+    background-color: var(--cor-6);
+}
+
+.radio-item:has(input:checked) {
+    color: var(--cor-11);
+    background-color: var(--cor-0);
+}
+
+.radio-item:focus-within {
+    outline: none;
+    border-color: var(--cor-p1);
+    box-shadow: 0px 0px 0px 1px rgb(255, 237, 134);
+}
+
+.radio-item input {
+    width: fit-content;
+}
+
+.radio-item input:hover,
+.radio-item input:focus {
+    box-shadow: none;
+}
+
+.radio-item span {
+    opacity: 0;
+}
+.radio-item:has(input:checked) span {
+    opacity: 1;
+}
+
+fieldset.plano {
+    display: none;
+}
+
+fieldset.bikcraft {
+    display: none;
+}
+
+fieldset.bikcraft > div {
+    background-color: var(--cor-0);
+    border-radius: 5px;
+
+    padding: 2rem;
+
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1.6rem;
+
+    gap: 1.6rem;
+}
+
+fieldset.bikcraft > div ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font: var(--font-1-xs);
+    color: var(--cor-8);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+fieldset.bikcraft > div ul img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.form-bikcraft:has(#seguro-radio:checked) fieldset.plano {
+    display: grid;
+}
+
+.form-bikcraft:has(#bikcraft-radio:checked) fieldset.bikcraft {
+    display: grid;
+}
+
+fieldset.bikcraft .radio-item:has(input:checked) + div {
+    display: grid;
+}
+
+@media (max-width: 850px) {
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        padding: 4rem;
+    }
+
+    .form,
+    .form fieldset {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .form {
+        padding: 2rem;
+    }
+    label.radio-item {
+        font-size: 1.4rem;
+    }
+
+    label.radio-item span {
+        font-size: 1rem;
+    }
+
+    fieldset.bikcraft > div {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset.bikcraft > div > img {
+        order: -1;
+    }
+}

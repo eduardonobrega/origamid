@@ -1,0 +1,84 @@
+.form {
+    background-color: var(--cor-0);
+    padding: 6rem;
+}
+
+.form,
+.form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+.form fieldset {
+    border: none;
+}
+.form fieldset + fieldset {
+    margin-top: 2rem;
+}
+
+.form fieldset legend {
+    color: var(--cor-9);
+    font: var(--font-1-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+
+    margin-bottom: 2rem;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form fieldset legend::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 0.8rem;
+    background-color: var(--cor-p1);
+    position: absolute;
+    left: -12px;
+}
+
+.all-col {
+    grid-column: 1 / -1;
+}
+
+.input-wrapper {
+    display: grid;
+    gap: 4px;
+}
+
+.form label {
+    font: var(--font-1-s);
+    font-weight: 500;
+}
+
+.form input,
+.form textarea {
+    background-color: var(--cor-1);
+    border-radius: 5px;
+    border: 1px solid var(--cor-2);
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--cor-p1);
+    box-shadow: 0px 0px 0px 1px rgb(255, 237, 134);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: var(--cor-7);
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 160px;
+}

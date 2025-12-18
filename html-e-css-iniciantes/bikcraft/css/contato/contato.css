@@ -57,46 +57,7 @@
 }
 
 .contato form {
-    background-color: var(--cor-0);
     border-radius: 0 5px 5px 0;
-    padding: 6rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    gap: 2rem;
-}
-
-.all-col {
-    grid-column: 1 / -1;
-}
-
-.contato form > div {
-    display: grid;
-    gap: 4px;
-}
-
-.contato form label {
-    font: var(--font-1-s);
-    font-weight: 500;
-}
-
-.contato form input,
-.contato form textarea {
-    background-color: var(--cor-1);
-    border-radius: 5px;
-    border: 1px solid var(--cor-2);
-    padding: 1.2rem;
-    width: 100%;
-}
-
-.contato form input::placeholder .contato form textarea::placeholder {
-    color: var(--cor-7);
-}
-
-.contato form textarea {
-    resize: vertical;
-    min-height: 160px;
 }
 
 @media (max-width: 800px) {
