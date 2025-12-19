@@ -83,7 +83,7 @@
     min-height: 160px;
 }
 
-.form p.message {
+form p.message {
     padding: 2rem;
     background-color: var(--cor-9);
     color: var(--cor-2);
@@ -92,13 +92,13 @@
     line-height: 1.5;
 }
 
-.form p.message span.sucesso {
+form p.message span.sucesso {
     color: #4daa0e;
 }
-.form p.message span.erro {
+form p.message span.erro {
     color: #ff3b3b;
 }
-.form p.message span.email {
+form p.message span.email {
     color: #ffffff;
     font-weight: 600;
 }

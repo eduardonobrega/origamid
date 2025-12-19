@@ -84,7 +84,7 @@
                 <form class="form" action="./enviar.php" method="post">
                     <div>
                         <label for="name">Nome</label>
-                        <input type="text" placeholder="Seu nome" id="name" name="nome" />
+                        <input type="text" placeholder="Seu nome" id="name" name="nome" required />
                     </div>
                     <div>
                         <label for="tel">Telefone</label>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="all-col">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="contato@email.com" id="email" name="email" />
+                        <input type="email" required placeholder="contato@email.com" id="email" name="email" />
                     </div>
                     <div class="all-col">
                         <label for="mensagem">Mensagem</label>
@@ -101,6 +101,7 @@
                             id="mensagem"
                             placeholder="O que você precisa?"
                             name="mensagem"
+                            required
                         ></textarea>
                     </div>
 
