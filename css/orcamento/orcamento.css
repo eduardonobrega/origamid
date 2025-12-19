@@ -124,11 +124,11 @@ fieldset.bikcraft > div ul img {
     height: 1.6rem;
 }
 
-.form-bikcraft:has(#seguro-radio:checked) fieldset.plano {
+.form-bikcraft:has(#seguro:checked) fieldset.plano {
     display: grid;
 }
 
-.form-bikcraft:has(#bikcraft-radio:checked) fieldset.bikcraft {
+.form-bikcraft:has(#bikcraft:checked) fieldset.bikcraft {
     display: grid;
 }
 

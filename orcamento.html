@@ -17,6 +17,10 @@
 
         <!-- Um bom title e description é bom para o S.O -->
         <title>Orçamento | Bikcraft</title>
+
+        <script>
+            document.documentElement.classList.add("js")
+        </script>
     </head>
     <body id="orcamento">
         <header class="header-bg">
@@ -50,25 +54,25 @@
                     <div class="form-bikcraft form">
                         <fieldset class="all-col">
                             <legend>bikcraft ou seguro?</legend>
-                            <label for="bikcraft-radio" class="radio-item">
-                                <input type="radio" name="escolha" id="bikcraft-radio" />
+                            <label for="bikcraft" class="radio-item">
+                                <input type="radio" name="escolha" id="bikcraft" />
                                 Bikcraft
                             </label>
-                            <label for="seguro-radio" class="radio-item">
-                                <input type="radio" name="escolha" id="seguro-radio" />
+                            <label for="seguro" class="radio-item">
+                                <input type="radio" name="escolha" id="seguro" />
                                 Seguro
                             </label>
                         </fieldset>
 
                         <fieldset class="all-col plano">
                             <legend>Escolha o plano</legend>
-                            <label for="plano-prata" class="radio-item all-col">
-                                <input type="radio" name="plano" id="plano-prata" />
+                            <label for="prata" class="radio-item all-col">
+                                <input type="radio" name="produto" value="prata" id="prata" />
                                 Prata
                                 <span>R$ 199</span>
                             </label>
-                            <label for="plano-ouro" class="radio-item all-col">
-                                <input type="radio" name="plano" id="plano-ouro" />
+                            <label for="ouro" class="radio-item all-col">
+                                <input type="radio" name="produto" value="ouro" id="ouro" />
                                 Ouro
                                 <span>R$ 299</span>
                             </label>
@@ -100,7 +104,12 @@
                                         Rastreador
                                     </li>
                                 </ul>
-                                <img src="./img/bicicletas/nimbus.jpg" width="1120" height="680" alt="Bicicleta nimbus" />
+                                <img
+                                    src="./img/bicicletas/nimbus.jpg"
+                                    width="1120"
+                                    height="680"
+                                    alt="Bicicleta nimbus"
+                                />
                             </div>
                             <label for="magic" class="radio-item all-col">
                                 <input type="radio" name="bikcraft" id="magic" />
@@ -126,7 +135,12 @@
                                         Rastreador
                                     </li>
                                 </ul>
-                                <img src="./img/bicicletas/magic.jpg" width="1120" height="680" alt="Bicicleta magic.jpg" />
+                                <img
+                                    src="./img/bicicletas/magic.jpg"
+                                    width="1120"
+                                    height="680"
+                                    alt="Bicicleta magic.jpg"
+                                />
                             </div>
                             <label for="nebula" class="radio-item all-col">
                                 <input type="radio" name="bikcraft" id="nebula" />
@@ -152,7 +166,12 @@
                                         Rastreador
                                     </li>
                                 </ul>
-                                <img src="./img/bicicletas/nebula.jpg" width="1120" height="680" alt="Bicicleta nebula.jpg" />
+                                <img
+                                    src="./img/bicicletas/nebula.jpg"
+                                    width="1120"
+                                    height="680"
+                                    alt="Bicicleta nebula.jpg"
+                                />
                             </div>
                         </fieldset>
                     </div>
@@ -258,5 +277,6 @@
                 <p class="footer-copy">Bikcraft © Alguns direitos reservados.</p>
             </div>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>

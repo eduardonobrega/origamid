@@ -16,6 +16,10 @@
 
         <!-- Um bom title e description é bom para o S.O -->
         <title>Nebula Cosmic | Bikcraft</title>
+
+        <script>
+            document.documentElement.classList.add("js")
+        </script>
     </head>
     <body id="bicicleta">
         <header class="header-bg">
@@ -57,7 +61,7 @@
                     </p>
 
                     <div class="detalhes-comprar">
-                        <a href="../orcamento.html" class="botao">comprar agora</a>
+                        <a href="../orcamento.html?produto=bikcraft&tipo=nebula" class="botao">comprar agora</a>
 
                         <span>
                             <img src="../img/icones/entrega.svg" width="16" height="16" alt="" />
@@ -183,7 +187,9 @@
                     </ul>
                     <ul class="footer-redes">
                         <li>
-                            <a href=""><img src="../img/redes/instagram.svg" width="32" height="32"  alt="Instagram" /></a>
+                            <a href="">
+                                <img src="../img/redes/instagram.svg" width="32" height="32" alt="Instagram" />
+                            </a>
                         </li>
                         <li>
                             <a href=""><img src="../img/redes/facebook.svg" width="32" height="32" alt="Facebook" /></a>
@@ -209,5 +215,6 @@
                 <p class="footer-copy">Bikcraft © Alguns direitos reservados.</p>
             </div>
         </footer>
+        <script src="../js/index.js"></script>
     </body>
 </html>

@@ -39,7 +39,8 @@
     left: 0;
 }
 
-.header-bg ul a:hover::after {
+.header-bg ul a:hover::after,
+.header-bg ul a.selected::after {
     width: 100%;
 }
 
