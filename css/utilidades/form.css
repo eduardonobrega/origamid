@@ -82,3 +82,23 @@
     resize: vertical;
     min-height: 160px;
 }
+
+.form p.message {
+    padding: 2rem;
+    background-color: var(--cor-9);
+    color: var(--cor-2);
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    line-height: 1.5;
+}
+
+.form p.message span.sucesso {
+    color: #4daa0e;
+}
+.form p.message span.erro {
+    color: #ff3b3b;
+}
+.form p.message span.email {
+    color: #ffffff;
+    font-weight: 600;
+}

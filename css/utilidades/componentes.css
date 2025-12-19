@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.botao:hover {
+.botao:not(:disabled):hover {
     background: linear-gradient(#ffb60d, #e59317);
 }
 
@@ -52,9 +52,14 @@
     color: var(--cor-4);
 }
 
-.botao.secundario:hover,
-.botao.secundario:focus {
+.botao.secundario:not(:disabled):hover,
+.botao.secundario:not(:disabled):focus {
     background: var(--cor-9);
+}
+
+.botao:disabled {
+    opacity: 0.5;
+    cursor: wait;
 }
 
 @media (max-width: 600px) {
